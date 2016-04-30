@@ -4,6 +4,15 @@ class Solution(object):
         :type n: int
         :rtype: str
         """
-        dictionary = {}
-        while True:
-            temp = n%27
+        result = ""
+
+        while n > 0:
+            n -= 1
+            temp = n%26
+            result = chr(ord('A') + temp) + result
+            n /= 26
+        return result
+
+
+testCase = Solution()
+print(testCase.convertToTitle(28))

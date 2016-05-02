@@ -1,3 +1,4 @@
+#O(MN) size of this matrix
 class Solution(object):
     def generateMatrix(self, n):
         """

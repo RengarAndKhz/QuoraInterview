@@ -1,3 +1,4 @@
+#O(n/26 + 1)
 class Solution(object):
     def convertToTitle(self, n):
         """

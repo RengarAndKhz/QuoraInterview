@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-
+#O(n^2) every node in postorder need index of in inorder
 class Solution(object):
     '''def buildTree(self, inorder, postorder):
         """

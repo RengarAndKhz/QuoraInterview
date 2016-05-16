@@ -6,11 +6,11 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         if n == 0: return []
-        matrix = [[0*n] for _ in xrange(n)]
+        matrix = [[0]*n for _ in xrange(n)]
         rowStart = 0
-        rowEnd = n
+        rowEnd = n-1
         colStart = 0
-        colEnd = n
+        colEnd = n-1
         insertVal = 1
         while rowStart <= rowEnd and colStart <= colEnd:
             for i in xrange(rowStart, rowEnd+1):
@@ -32,3 +32,5 @@ class Solution(object):
                     insertVal += 1
                 rowStart += 1
         return matrix
+testCase = Solution()
+print(testCase.generateMatrix(5))

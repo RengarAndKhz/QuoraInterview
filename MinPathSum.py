@@ -11,4 +11,4 @@ class Solution(object):
                 if i == 0 and j != 0: grid[j][i] += grid[j-1][i]
                 if i != 0 and j != 0:
                     grid[j][i] += min(grid[j-1][i], grid[j][i-1])
-        return grid[len(grid)-1][len(grid[0])]
+        return grid[len(grid)-1][len(grid[0])-1]

@@ -25,7 +25,7 @@ class LRUCache(object):
         :rtype: nothing
         """
         if key in self.dictionary:
-            self.dictionary.pop(key)
+            self.dictionary.pop(key)()
             self.dictionary[key] = value
         else:
             if len(self.dictionary) >= self.capacity:

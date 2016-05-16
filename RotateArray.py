@@ -17,3 +17,8 @@ nums = nums[n-k:] + nums[:n-k]
 on the OJ.
 
 The previous one can truly change the value of old nums, but the following one just changes its reference to a new nums not the value of old nums.'''
+import heapq
+h = ["a", "b", "c"]
+heapq.heapify(h)
+heapq.heappop()
+print(h)

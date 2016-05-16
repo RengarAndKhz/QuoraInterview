@@ -1,6 +1,6 @@
 class Solution(object):
     def previousePermutation(self, nums):
-        pointer1 = 0
+        #pointer1 = 0
         for i in xrange(len(nums)-2, -1, -1):
             if nums[i] > nums[i+1]:
                 pointer1 = i
@@ -8,7 +8,7 @@ class Solution(object):
         else:
             nums.sort(reverse=True)
             return
-        pointer2 = 0
+        #pointer2 = 0
         for i in xrange(len(nums)-1, -1, -1):
             if nums[i] < nums[pointer1]:
                 pointer2 = i
